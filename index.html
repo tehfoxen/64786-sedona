@@ -82,7 +82,35 @@
         <br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
       <a class="search-btn">Поиск гостиницы в седоне</a>
     </section>
-    <section class="map"></section>
+    <section class="map">
+      <div class="form form-show">
+        <form>
+          <div class="data-line">
+            <label for="in1">Дата заезда:</label>
+            <input class="data-input" type="text" placeholder="24 апреля 2014" id="in1">
+          </div>
+          <div class="data-line">
+            <label for="in2">Дата выезда:</label>
+            <input class="data-input" type="text" placeholder="4 июля 2017" id="in2">
+          </div>
+          <div class="data-line">
+            <div class="line-adults">
+              <button class="icon-minus btn" type="button"></button>
+              <label for="ad">Взрослые</label>
+              <input class="amounts-of-adults" type="text" value="2" id=ad>
+              <button class="icon-plus btn" type="button"></button>
+            </div>
+            <div class="line-children">
+              <button class="icon-minus btn" type="button"></button>
+              <label for="ch">Дети</label>
+              <input class="amounts-of-children" type="text" value="0" id=ch>
+              <button class="icon-plus btn" type="button"></button>
+            </div>
+          </div>
+          <button class="search-btn" type="submit">Найти</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="hashtag">
