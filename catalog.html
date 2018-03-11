@@ -32,51 +32,56 @@
     <form action="https://htmlacademy.ru" method="get">
       <section class="filter-block">
         <div class="infrastructure">
-          <p class="inf-title">Инфраструктура</p>
-          <div class="filter-checkbox">
-            <input type="checkbox" name="swimmingpool" value="Бассейн" id="i1" checked>
-            <label for="i1">Бассейн</label>
-          </div>
-          <div class="filter-checkbox">
-            <input type="checkbox" name="parking" value="Парковка" id="i2">
-            <label for="i2">Парковка</label>
-          </div>
-          <div class="filter-checkbox">
-            <input type="checkbox" name="wi-fi" value="wi-fi" id="i3">
-            <label for="i3">wi-fi</label>
-          </div>
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="swimmingpool" value="Бассейн" id="i1" checked>
+              <label for="i1">Бассейн</label>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="parking" value="Парковка" id="i2">
+              <label for="i2">Парковка</label>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="wi-fi" value="wi-fi" id="i3">
+              <label for="i3">wi-fi</label>
+            </div>
         </div>
+        </fieldset>
         <div class="accommodation">
-          <p class="inf-title">Тип жилья</p>
-          <div class="filter-checkbox">
-            <input type="checkbox" name="hotel" value="Гостиница" id="a1" checked>
-            <label for="a1">Гостиница</label>
-          </div>
-          <div class="filter-checkbox">
-            <input type="checkbox" name="motel" value="Мотель" id="a2" checked>
-            <label for="a2">Мотель</label>
-          </div>
-          <div class="filter-checkbox">
-            <input type="checkbox" name="apartments" value="Апартаменты" id="a3" checked>
-            <label for="a3">Апартаменты</label>
-          </div>
-        </div>
-        <div class="filter">
-          <p class="inf-title">Стоимость в сутки (Р):</p>
-          <div class="price">
-            <div class="price-input">
-              <input class="min-price" type="text" value="от 0">
-              <input class="max-price" type="text" value="до 3000">
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="hotel" value="Гостиница" id="a1" checked>
+              <label for="a1">Гостиница</label>
             </div>
-            <div class="range">
-              <div class="scale"></div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-togge"></div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="motel" value="Мотель" id="a2" checked>
+              <label for="a2">Мотель</label>
             </div>
-            <input type="submit" class="filter-btn" value="Показать">
-          </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" name="apartments" value="Апартаменты" id="a3" checked>
+              <label for="a3">Апартаменты</label>
+            </div>
         </div>
-
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="filter">
+            <div class="price">
+              <div class="price-input">
+                <input class="min-price" type="text" value="от 0">
+                <input class="max-price" type="text" value="до 3000">
+              </div>
+              <div class="range">
+                <div class="scale"></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-togge"></div>
+              </div>
+              <input type="submit" class="filter-btn" value="Показать" aria-label="Показать">
+            </div>
+          </div>
+        </fieldset>
       </section>
     </form>
     <section class="sorting-block">
@@ -115,7 +120,7 @@
     <section class="result-block">
       <article class="result-item">
         <div class="result-image">
-          <img class="hotel-image" src="img/amara-resort-small.jpg" alt="Фото отеля" title="Amara resort &amp; spa">
+          <img class="hotel-image" src="img/amara-resort-small.jpg" alt="Фото отеля Amara Resort & Spa" title="Amara resort &amp; spa">
         </div>
         <div class="result-description">
           <h1 class="hotel-header">
@@ -146,7 +151,7 @@
       </article>
       <article class="result-item">
         <div class="result-image">
-          <img class="hotel-image" src="img/desert-quail-small.jpg" alt="Фото отеля" title="Desert Quail Inn">
+          <img class="hotel-image" src="img/desert-quail-small.jpg" alt="Фото отеля Desert Quail Inn" title="Desert Quail Inn">
         </div>
         <div class="result-description">
           <h1 class="hotel-header">
@@ -176,7 +181,7 @@
       </article>
       <article class="result-item">
         <div class="result-image">
-          <img class="hotel-image" src="img/villas-atpoco-small.jpg" alt="Фото отеля" title="Villas at Poco Diablo">
+          <img class="hotel-image" src="img/villas-atpoco-small.jpg" alt="Фото отеля Villas at Poco Diablo" title="Villas at Poco Diablo">
         </div>
         <div class="result-description">
           <h1 class="hotel-header">
@@ -210,13 +215,13 @@
       <a href="#">#visitsedona</a>
     </div>
     <div class="social">
-      <a href="#" class="social-btn tw">
+      <a href="#" class="social-btn tw" aria-label="twitter">
         <span class="icon-tw"></span>
       </a>
-      <a href="#" class="social-btn fb">
+      <a href="#" class="social-btn fb" aria-label="facebook">
         <span class="icon-fb"></span>
       </a>
-      <a href="#" class="social-btn yt">
+      <a href="#" class="social-btn yt" aria-label="youtube">
         <span class="icon-yt"></span>
       </a>
     </div>

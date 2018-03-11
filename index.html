@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,26 +43,24 @@
       <div class="description-item">
         <h2>Настоящий городок</h2>
         <span>– №1 –</span>
-        <p>Седона не атракцион для туристов, 
-          там течет своя жизнь</p>
+        <p>Седона не атракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="description-photo first"></div>
     </section>
+    <section class="features"></section>
     <section class="description">
       <div class="description-photo second"></div>
       <div class="description-item">
         <h2>Там есть мост дьявола </h2>
         <span>– №2 –</span>
-        <p>Да, по нему можно пройти! Если конечно
-         вы осмелитесь </p>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
       </div>
     </section>
     <section class="description">
       <div class="description-item color">
         <h2>Небольшая площадь</h2>
         <span>— №3 —</span>
-        <p>Все достопримечательности
-          находятся очень близко</p>
+        <p>Все достопримечательности находятся очень близко</p>
       </div>
       <div class="description-item color">
         <h2>Красивая дорога</h2>
@@ -76,8 +75,7 @@
     </section>
     <section class="interest">
       <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,
-        и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
       <a class="search-btn">Поиск гостиницы в седоне</a>
     </section>
     <section class="map">
@@ -99,13 +97,13 @@
               <button class="icon-plus btn" type="button"></button>
             </div>
             <div class="line-children">
-              <button class="icon-minus btn" type="button"></button>
+              <button class="icon-minus btn" type="button" aria-label="минус"></button>
               <label for="ch">Дети</label>
               <input class="amounts-of-children" type="text" value="0" id=ch>
-              <button class="icon-plus btn" type="button"></button>
+              <button class="icon-plus btn" type="button" aria-label="плюс"></button>
             </div>
           </div>
-          <button class="search-btn" type="submit">Найти</button>
+          <button class="search-btn" type="submit" aria-label="Найти">Найти</button>
         </form>
       </div>
     </section>
@@ -115,13 +113,13 @@
       <a href="#">#visitsedona</a>
     </div>
     <div class="social">
-      <a href="#" class="social-btn tw">
+      <a href="#" class="social-btn tw" aria-label="twitter">
         <span class="icon-tw"></span>
       </a>
-      <a href="#" class="social-btn fb">
+      <a href="#" class="social-btn fb" aria-label="facebook">
         <span class="icon-fb"></span>
       </a>
-      <a href="#" class="social-btn yt">
+      <a href="#" class="social-btn yt" aria-label="youtube">
         <span class="icon-yt"></span>
       </a>
     </div>
