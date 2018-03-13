@@ -250,15 +250,23 @@ a {
   font-weight: bold;
 }
 
+.result-details a:hover {
+  background-color: #669ec0;
+}
+
 .reserve a {
   background-color: #766357;
   color: #ffffff;
   font-weight: bold;
 }
+.reserve a:hover{
+  background-color:#604e43;
+}
 
 .rating-amount span {
   background-color: #f2f2f2;
 }
-.price-input input{
-    text-transform: uppercase;
+
+.price-input input {
+  text-transform: uppercase;
 }
