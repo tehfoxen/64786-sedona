@@ -105,11 +105,6 @@ a {
 .form-show {
   text-align: center;
 }
-
-.button {
-  font: inherit;
-}
-
 .search-btn-blue:hover {
   background-color: #669ec0;
 }
