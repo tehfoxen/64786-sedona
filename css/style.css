@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: normal;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.main-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #766357;
+}
+
+.header-banner {
+  text-align: center;
+}
+
+.main-banner {
+  text-align: center;
+}
+
+.header-banner h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.description-item {
+  background-color: #81b3d2;
+  color: white;
+  text-align: center;
+}
+
+.description-item h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.description-item.color {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.description-photo.first {
+  background-image: url('../img/description-photo-first.jpg')
+}
+
+.description-photo.second {
+  background-image: url('../img/description-photo-second.jpg')
+}
+
+.interest {
+  text-align: center;
+}
+
+.interest h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.search-btn {
+  background-color: #766357;
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+  background-color: #604e43;
+}
+
+.data-line label {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.form-show {
+  text-align: center;
+}
+
+.button {
+  font: inherit;
+}
+
+.search-btn-blue:hover {
+  background-color: #669ec0;
+}
+
+.search-btn-blue:active {
+  background-color: #5496bd;
+}
+
+.search-btn-blue {
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+.data-line input {
+  font: inherit;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.data-line input:hover {
+  background-color: #f2f2f2;
+}
+
+.data-line input:focus {
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+}
+
+.icon-minus.btn:hover,
+.icon-plus.btn:hover {
+  background-color: #000000;
+}
+
+.icon-minus.btn:active,
+.icon-plus.btn:active {
+  background-color: #81b3d2;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+/*второстепенная страница*/
+
+.filter-block {
+  background: url('../img/filter-background.jpg') no-repeat;
+  color: #ffffff;
+}
+
+.filter-block legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.filter-block fieldset {
+  border: none;
+}
+
+.filter-block label {
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.price-input input {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.filter-btn {
+  background-color: transparent;
+  color: #ffffff;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.filter-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sorting-quantity span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting-range span {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-range-list {
+  list-style: none;
+}
+
+.sorting-range-list a {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-range-list a:hover,
+.sorting-range-list a:active {
+  color: #81b3d2;
+}
+
+.sorting-range-list .active {
+  text-decoration: none;
+  color: #81b3d2;
+  border: none;
+}
+
+.sorting-sort-list {
+  list-style: none;
+}
+
+.hotel-header {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-header a {
+  color: #000000;
+}
+
+.result-details a {
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.reserve a {
+  background-color: #766357;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.rating-amount span {
+  background-color: #f2f2f2;
+}
+.price-input input{
+    text-transform: uppercase;
+}
