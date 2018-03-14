@@ -28,8 +28,13 @@ a {
 }
 
 .main-navigation a:hover,
-.main-navigation a:focus {
+h1.hotel-header a:hover {
   color: #81b3d2;
+}
+
+.main-navigation a:focus,
+h1.hotel-header a:focus {
+  color: #b7b7b7;
 }
 
 .main-navigation a:active {
@@ -97,6 +102,11 @@ a {
   background-color: #604e43;
 }
 
+.search-btn:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
 .data-line label {
   line-height: 26px;
   font-weight: bold;
@@ -105,12 +115,14 @@ a {
 .form-show {
   text-align: center;
 }
+
 .search-btn-blue:hover {
   background-color: #669ec0;
 }
 
 .search-btn-blue:active {
   background-color: #5496bd;
+  color: #88b6d1;
 }
 
 .search-btn-blue {
@@ -215,8 +227,7 @@ a {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-range-list a:hover,
-.sorting-range-list a:active {
+.sorting-range-list a:hover {
   color: #81b3d2;
 }
 
@@ -245,17 +256,10 @@ a {
   font-weight: bold;
 }
 
-.result-details a:hover {
-  background-color: #669ec0;
-}
-
 .reserve a {
   background-color: #766357;
   color: #ffffff;
   font-weight: bold;
-}
-.reserve a:hover{
-  background-color:#604e43;
 }
 
 .rating-amount span {
@@ -264,4 +268,18 @@ a {
 
 .price-input input {
   text-transform: uppercase;
+}
+
+.reserve a:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
+.result-details a:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.sorting-range-list a:active {
+  color: #000000;
 }
