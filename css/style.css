@@ -67,13 +67,23 @@ h1.hotel-header a:focus {
   font-weight: bold;
 }
 
-.description-item.color {
+.advantages-item {
   color: #000000;
   background-color: #eeeeee;
+  width: 400px;
+  text-align: center;
+  padding: 46px 60px 40px
 }
 
 .description-photo.first {
-  background-image: url('../img/description-photo-first.jpg')
+  background-image: url(../img/description-photo-first.jpg);
+  width: 800px;
+  background-size: cover;
+}
+.description-photo.second {
+  background-image: url(../img/description-photo-second.jpg);
+  width: 800px;
+  background-size: cover;
 }
 
 .description-photo.second {
@@ -282,4 +292,85 @@ h1.hotel-header a:focus {
 
 .sorting-range-list a:active {
   color: #000000;
+}
+
+/*стили для сетки*/
+
+.main-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+  align-items: center;
+}
+
+.menu-item {
+  text-align: center;
+  height: 56px;
+  padding-top: 15px;
+  width: 20%;
+}
+
+.menu-item:nth-child(3) {
+  padding-left: 250px;
+}
+
+.top-menu .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 1;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-banner {
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 518px;
+  background: url(../img/shape.png) no-repeat 52% bottom, #81b3d2 url(../img/background-photo.jpg) no-repeat bottom;
+}
+
+.main-banner {
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 63px;
+}
+
+.header-banner {
+  width: 576px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+.description::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.description-item {
+  width: 400px;
+  padding: 53px 20px 40px;
+}
+.advantages{
+  display:flex;
 }
