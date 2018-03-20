@@ -580,17 +580,28 @@ h1.hotel-header {
 }
 
 .rating-amount {
-  display: flex;
-  justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 5px;
   color: #666666;
   background-color: #f2f2f2;
   text-align: center;
-  padding: 5px 15px;
 }
 
 .result-rating {
   height: 97px;
   width: 110px;
+}
+
+.result-rating {
+  height: 97px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-block {
+  box-sizing: border-box;
+  min-height: 215px;
+  color: #ffffff;
+  background-position: center;
 }
