@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   color: #333333;
   font-weight: normal;
   text-transform: uppercase;
@@ -14,17 +14,35 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
-  line-height: 26px;
-  font-weight: bold;
+.main-header {
+  height: 56px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 26px;
+  font-weight: bold;
   list-style: none;
+  background: rgba(228, 247, 154, 0.2);
+  box-shadow: 0 0 0 3px rgb(253, 201, 13);
 }
 
 .main-navigation a {
   color: #000000;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .main-navigation a:hover,
@@ -46,13 +64,34 @@ h1.hotel-header a:focus {
 }
 
 .main-banner {
+  margin: 0;
+  padding: 0;
+  z-index: 2;
   text-align: center;
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 510px;
+  background: url(../img/shape.png) no-repeat 52% bottom, #81b3d2 url(../img/background-photo.jpg) no-repeat bottom;
+}
+
+.main-banner {
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 60px;
 }
 
 .header-banner h1 {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+p {
+  line-height: 26px;
 }
 
 .description-item {
@@ -314,25 +353,6 @@ h1.hotel-header a:focus {
 
 /*стили для сетки*/
 
-.main-navigation {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  height: 56px;
-  align-items: center;
-}
-
-.menu-item {
-  text-align: center;
-  height: 56px;
-  padding-top: 15px;
-  width: 20%;
-}
-
-.menu-item:nth-child(3) {
-  padding-left: 250px;
-}
-
 .top-menu .logo {
   position: absolute;
   left: 50%;
@@ -346,26 +366,6 @@ h1.hotel-header a:focus {
   margin: 0 auto;
 }
 
-.main-banner {
-  margin: 0;
-  padding: 0;
-  z-index: 2;
-}
-
-.main-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 518px;
-  background: url(../img/shape.png) no-repeat 52% bottom, #81b3d2 url(../img/background-photo.jpg) no-repeat bottom;
-}
-
-.main-banner {
-  width: 100%;
-  z-index: 2;
-  margin-bottom: 63px;
-}
-
 .header-banner {
   width: 576px;
   display: block;
@@ -377,10 +377,6 @@ h1.hotel-header a:focus {
 .description {
   display: flex;
   flex-direction: row;
-}
-
-.features {
-  margin-bottom: 88px;
 }
 
 .description:first-child {
