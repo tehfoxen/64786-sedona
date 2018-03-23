@@ -23,26 +23,46 @@ a {
 
 .main-navigation {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  height: 56px;
-  align-items: center;
-  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 17px;
   line-height: 26px;
-  font-weight: bold;
   list-style: none;
-  background: rgba(228, 247, 154, 0.2);
-  box-shadow: 0 0 0 3px rgb(253, 201, 13);
 }
 
 .main-navigation a {
   color: #000000;
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-right: 70px;
-  padding-left: 70px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-navigation li {
+  box-sizing: border-box;
+  width: 240px;
+  ;
+  list-style: none;
+}
+
+.main-navigation li:first-child {
+  padding-left: 72px;
+  text-align: left;
+}
+
+.main-navigation li:last-child {
+  padding-right: 72px;
+  text-align: right;
+}
+
+.main-navigation li:nth-child(3) {
+  margin-left: 240px;
+  text-align: center;
+}
+
+.main-navigation li:nth-child(2) {
+  text-align: center;
 }
 
 .main-navigation a:hover,
@@ -74,7 +94,7 @@ h1.hotel-header a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 510px;
+  min-height: 508px;
   background: url(../img/shape.png) no-repeat 52% bottom, #81b3d2 url(../img/background-photo.jpg) no-repeat bottom;
 }
 
@@ -84,14 +104,16 @@ h1.hotel-header a:focus {
   margin-bottom: 60px;
 }
 
+.intro-banner {
+  position: absolute;
+  top: 131px;
+}
+
 .header-banner h1 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-}
-
-p {
-  line-height: 26px;
+  padding-bottom: 14px;
 }
 
 .description-item {
@@ -104,6 +126,8 @@ p {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 3px;
 }
 
 .advantages-item {
@@ -117,6 +141,7 @@ p {
 .description-photo.first {
   background-image: url(../img/description-photo-first.jpg);
   width: 800px;
+  height: 256px;
   background-size: cover;
 }
 
@@ -371,7 +396,7 @@ p {
   display: block;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .description {
@@ -379,13 +404,10 @@ p {
   flex-direction: row;
 }
 
-.description:first-child {
-  margin-bottom: 63px;
-}
-
 .description-item {
   width: 400px;
-  padding: 53px 20px 40px;
+  min-height: 256px;
+  text-align: center;
 }
 
 .advantages {
