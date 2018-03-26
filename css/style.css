@@ -1206,6 +1206,14 @@ img.hotel-image {
   color: #000000;
 }
 
+span.icon-star {
+  margin-left: -3px;
+}
+
+span.icon-calendar:active {
+  color: #81b3d2;
+}
+
 .sorting-ab span:active {
   color: #81b3d2;
 }
