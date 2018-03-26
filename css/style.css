@@ -36,6 +36,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+}
+
 .main-header {
   height: 56px;
   position: relative;
@@ -59,6 +65,10 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
+}
+
+.top-menu .active {
+  color: #766357;
 }
 
 .main-navigation li {
@@ -92,8 +102,8 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
 }
 
-.main-navigation a:focus,
-.hotel-header a:focus {
+.main-navigation a:active,
+.hotel-header a:active {
   color: #b7b7b7;
 }
 
@@ -229,6 +239,10 @@ input[type="radio"].visually-hidden {
   color: #857871;
 }
 
+.search-btn:active {
+  background: #669ec0;
+}
+
 .data-line label {
   line-height: 26px;
   font-weight: bold;
@@ -261,18 +275,18 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.data-line input {
+.search-form input {
   font: inherit;
   background-color: #f2f2f2;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.data-line input:hover {
+.search-form input:hover {
   background-color: #f2f2f2;
 }
 
-.data-line input:focus {
+.search-form input:focus {
   background-color: transparent;
   border: 2px solid #e5e5e5;
 }
@@ -404,14 +418,6 @@ input[type="radio"].visually-hidden {
   border: none;
   background-color: #f2f2f2;
   text-align: center;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 /*второстепенная страница*/
@@ -572,12 +578,15 @@ input[type="radio"].visually-hidden {
 
 .reserve a:hover {
   background-color: #503e33;
+}
+
+.reserve a:active {
+  background-color: #503e33;
   color: #857871;
 }
 
 .result-details a:hover {
-  background-color: #5496bd;
-  color: #88b6d1;
+  background-color: #669ec0;
 }
 
 .result-details a:active {
@@ -600,29 +609,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.social-btn:hover,
-.social-btn:focus {
+.social-btn:hover {
   background: #669ec0;
 }
 
 .social-btn:active path {
   fill: #88b6d1;
-}
-
-.footer .social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 150px;
-  list-style: none;
-}
-
-.footer .developer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 214px;
-  list-style: none;
 }
 
 .developer a {
@@ -649,11 +641,6 @@ input[type="radio"].visually-hidden {
   transform: translateX(-50%);
   top: 0;
   z-index: 1;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .header-banner {
@@ -709,10 +696,16 @@ input[type="radio"].visually-hidden {
 }
 
 .item-one::before,
-.item-two::before,
-.item-three::before {
+.item-two::before {
   top: 60px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.item-three::before {
+  top: 56px;
+  left: 51%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -793,7 +786,7 @@ input[type="radio"].visually-hidden {
 }
 
 .date-of-departure {
-  top: 135px;
+  top: 127px;
   right: 60px;
 }
 
@@ -809,8 +802,13 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
   padding: 55px;
-  width: 567px;
+  width: 568px;
   height: 395px;
   background: #ffffff;
   font-weight: bold;
@@ -821,7 +819,6 @@ input[type="radio"].visually-hidden {
 .search-form .entry,
 .search-form .departure {
   padding-top: 5px;
-  margin-bottom: 10px;
 }
 
 .search {
@@ -842,6 +839,10 @@ input[type="radio"].visually-hidden {
   padding-left: 15px;
 }
 
+span.icon-calendar:active {
+  color: #81b3d2;
+}
+
 .amount button[name="minus-children"] {
   margin-left: 26px;
 }
@@ -849,13 +850,6 @@ input[type="radio"].visually-hidden {
 .date-of-entry span:hover,
 .date-of-departure span:hover {
   color: #000000;
-}
-
-.footer {
-  display: flex;
-  width: 1200px;
-  padding: 21px 0;
-  align-items: center;
 }
 
 .hashtag {
@@ -1086,7 +1080,7 @@ h1.hotel-header {
 }
 
 .result-details {
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .result-details span {
@@ -1227,4 +1221,35 @@ h1.hotel-header {
 
 .rating-stars .icon-star::before {
   margin-right: 0;
+}
+
+.footer {
+  display: flex;
+  width: 1200px;
+  padding: 21px 0;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.footer .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  list-style: none;
+}
+
+.footer .developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  list-style: none;
 }
