@@ -102,53 +102,54 @@
         <a class="search-btn">Поиск гостиницы в седоне</a>
       </section>
       <section class="map">
-       
-          <form class="search-form search-form-visible" action="https://htmlacademy.ru" method="get">
-           
-            <label class="entry" for="date-of-entry">Дата заезда:
 
-              <a class="date-of-entry" href="#">
-                <span class="icon-calendar">
+        <form class="search-form search-form-visible" action="https://htmlacademy.ru" method="get">
 
-                </span>
-              </a>
-            </label>
-            <input  type="text" name="date-of-entry" id="date-of-entry" value="24 апреля 2017" id="in1">
+          <label class="entry" for="date-of-entry">Дата заезда:
 
-            <label class="departure" for="date-of-departure">Дата выезда:
+            <a class="date-of-entry" href="#">
+              <span class="icon-calendar">
 
-              <a class="date-of-departure" href="#">
-                <span class="icon-calendar">
+              </span>
+            </a>
+          </label>
+          <input type="text" name="date-of-entry" id="date-of-entry" value="24 апреля 2017">
 
-                </span>
-              </a>
-            </label>
-            <input type="text" name="date-of-departure" id="date-of-departure" value="4 июля 2017" id="in2">
 
-            <div class="amount">
-                <label for="amount-of-adults">Взрослые:</label>
-              <button name="minus-adult" type="button">
+          <label class="departure" for="date-of-departure">Дата выезда:
+
+            <a class="date-of-departure" href="#">
+              <span class="icon-calendar">
+
+              </span>
+            </a>
+          </label>
+          <input type="text" name="date-of-departure" id="date-of-departure" value="4 июля 2017">
+
+          <div class="amount">
+            <label for="amounts-of-adults">Взрослые:</label>
+            <button name="minus-adult" type="button">
               <span class="icon-minus"></span>
             </button>
-              <input id="amounts-of-adults" type="text" value="2" id=ad>
+            <input id="amounts-of-adults" type="text" value="2">
 
-              <button name="plus-adult" type="button">
-                <span class="icon-plus"></span>
-              </button>
+            <button name="plus-adult" type="button">
+              <span class="icon-plus"></span>
+            </button>
 
-              <label for="amounts-of-children">Дети</label>
-                <button name="minus-children" type="button" aria-label="минус">
-                  <span class="icon-minus"></span>
-                </button>
-                
-                <input id="amounts-of-children" type="text" value="0" id=ch>
-                <button name="plus-children" type="button" aria-label="плюс">
-                <span class="icon-plus"></span>
-              </button>
-            </div>
-            <button class="search-btn-blue" type="submit" aria-label="Найти">Найти</button>
-          </form>
-       
+            <label for="amounts-of-children">Дети</label>
+            <button name="minus-children" type="button" aria-label="минус">
+              <span class="icon-minus"></span>
+            </button>
+
+            <input id="amounts-of-children" type="text" value="0">
+            <button name="plus-children" type="button" aria-label="плюс">
+              <span class="icon-plus"></span>
+            </button>
+          </div>
+          <button class="search-btn-blue" type="submit" aria-label="Найти">Найти</button>
+        </form>
+
       </section>
     </main>
     <footer class="footer footer-index">

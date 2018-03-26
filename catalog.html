@@ -38,22 +38,22 @@
 
           <div class="infrastructure">
 
-            <legend>Инфраструктура</legend>
+            <h2>Инфраструктура</h2>
 
             <input type="checkbox" name="swimmingpool" value="Бассейн" id="i1" checked>
             <label for="i1">Бассейн</label>
 
 
-            <input type="checkbox" name="parking" value="Парковка" id="i2">
+            <input type="checkbox" name="parking" value="Парковка" id="i2" disabled>
             <label for="i2">Парковка</label>
 
 
-            <input type="checkbox" name="wi-fi" value="wi-fi" id="i3">
+            <input type="checkbox" name="wi-fi" value="wi-fi" id="i3" disabled>
             <label for="i3">wi-fi</label>
           </div>
           <div class="accommodation">
 
-            <legend>Тип жилья</legend>
+            <h2>Тип жилья</h2>
             <div class="filter-checkbox">
               <input type="checkbox" name="hotel" value="Гостиница" id="a1" checked>
               <label for="a1">Гостиница</label>
@@ -70,20 +70,24 @@
 
           </div>
           <div class="filter-range">
-              <div class="filter-range-title">Стоимость в сутки (р):</div>
-              <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-              </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <button class="btn-transparent" type="submit">Показать</button>
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="3000">
+              </label>
             </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
         </form>
       </section>
       <section class="sorting-block">
@@ -105,17 +109,25 @@
           </ul>
         </div>
         <div class="sorting-ab">
-            <ul class="sorting-ab-list">
-              <li><a href="#"><span class="icon-up-dir"></span></a></li>
-              <li><a><span class="icon-down-dir active"></span></a></li>
-            </ul>
-          </div>
-   
+          <ul class="sorting-ab-list">
+            <li>
+              <a href="#">
+                <span class="icon-up-dir"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon-down-dir active"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="result-block">
         <article class="result-item">
           <div class="result-image">
-            <img class="hotel-image" src="img/amara-resort-small.jpg" alt="Фото отеля Amara Resort & Spa" title="Amara resort &amp; spa">
+            <img class="hotel-image" src="img/amara-resort-small.jpg" alt="Фото отеля Amara Resort & Spa" title="Amara resort &amp; spa" width="135" height="90">
           </div>
           <div class="result-description">
             <h1 class="hotel-header">
@@ -123,16 +135,16 @@
             </h1>
             <div class="result-details">
               <span>Гостиница</span>
-              <br>
+
               <a href="#">Подробнее</a>
             </div>
             <div class="reserve">
               <span>От 4000 р.</span>
-              <br>
+
               <a href="#">Забронировать</a>
             </div>
           </div>
-          
+
           <div class="result-rating">
             <div class="rating-stars">
               <span class="icon-star"></span>
@@ -147,7 +159,7 @@
         </article>
         <article class="result-item">
           <div class="result-image">
-            <img class="hotel-image" src="img/desert-quail-small.jpg" alt="Фото отеля Desert Quail Inn" title="Desert Quail Inn">
+            <img class="hotel-image" src="img/desert-quail-small.jpg" alt="Фото отеля Desert Quail Inn" title="Desert Quail Inn" width="135" height="90">
           </div>
           <div class="result-description">
             <h1 class="hotel-header">
@@ -155,12 +167,12 @@
             </h1>
             <div class="result-details">
               <span>Мотель</span>
-              <br>
+
               <a href="#">Подробнее</a>
             </div>
             <div class="reserve">
               <span>От 3000 р.</span>
-              <br>
+
               <a href="#">Забронировать</a>
             </div>
           </div>
@@ -177,7 +189,7 @@
         </article>
         <article class="result-item">
           <div class="result-image">
-            <img class="hotel-image" src="img/villas-atpoco-small.jpg" alt="Фото отеля Villas at Poco Diablo" title="Villas at Poco Diablo">
+            <img class="hotel-image" src="img/villas-atpoco-small.jpg" alt="Фото отеля Villas at Poco Diablo" title="Villas at Poco Diablo" width="135" height="90">
           </div>
           <div class="result-description">
             <h1 class="hotel-header">
@@ -185,12 +197,12 @@
             </h1>
             <div class="result-details">
               <span>Апартаменты</span>
-              <br>
+
               <a href="#">Подробнее</a>
             </div>
             <div class="reserve">
               <span>От 2000 р.</span>
-              <br>
+
               <a href="#">Забронировать</a>
             </div>
           </div>
