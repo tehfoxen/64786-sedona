@@ -556,8 +556,8 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   color: #ffffff;
   font-weight: bold;
-  padding: 3px 17px;
-  margin-top: 4px;
+  padding: 0px 17px;
+  margin-top: 12px;
   display: block;
 }
 
@@ -565,9 +565,9 @@ input[type="radio"].visually-hidden {
   background-color: #766357;
   color: #ffffff;
   font-weight: bold;
-  padding: 3px 17px;
+  padding: 0px 17px;
   display: block;
-  margin-top: 4px;
+  margin-top: 12px;
 }
 
 .rating-amount span {
@@ -778,12 +778,17 @@ input[type="radio"].visually-hidden {
 
 .map {
   display: flex;
-  position: relative;
+  background-image: url(../img/map.png);
+  width: 1200px;
+  border: 0;
+}
+
+.map iframe {
   background: #dfe7cd;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   width: 1200px;
-  height: 474px;
+  height: 595px;
   border: 0;
 }
 
@@ -1026,7 +1031,7 @@ span.icon-calendar:active {
 
 .sorting-block {
   display: flex;
-  padding: 29px 72px 30px 72px;
+  padding: 30px 72px 28px 72px;
   box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
   align-items: baseline;
@@ -1063,13 +1068,14 @@ ul.sorting-range-list li {
 
 .result-item {
   display: flex;
-  padding: 25px 72px;
+  padding: 29px 72px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #e5e5e5;
   align-items: center;
 }
 
 .result-image {
-  margin-right: 30px;
+  margin-right: 29px;
 }
 
 img.hotel-image {
@@ -1081,6 +1087,8 @@ img.hotel-image {
   min-width: 750px;
   margin-top: 0;
   margin-bottom: 5px;
+  margin-top: -3px;
+  margin-bottom: 4px;
 }
 
 .result-description {
@@ -1103,10 +1111,12 @@ img.hotel-image {
 
 .rating-amount {
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
+  margin-bottom: 9px;
   color: #666666;
   background-color: #f2f2f2;
   text-align: center;
+  line-height: 21px;
 }
 
 .result-rating {
@@ -1207,7 +1217,7 @@ img.hotel-image {
 }
 
 span.icon-star {
-  margin-left: -3px;
+  margin-left: -5px;
 }
 
 span.icon-calendar:active {
@@ -1225,7 +1235,7 @@ span.icon-calendar:active {
 .result-rating {
   display: flex;
   flex-direction: column;
-  height: 97px;
+  height: 100px;
   width: 110px;
   text-align: right;
   justify-content: space-between;
@@ -1248,7 +1258,8 @@ span.icon-calendar:active {
 .footer {
   display: flex;
   width: 1200px;
-  padding: 21px 0;
+  padding: 23px 0;
+  padding-left: 2px;
   align-items: center;
 }
 
