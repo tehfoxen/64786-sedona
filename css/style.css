@@ -258,17 +258,17 @@ input[type="radio"].visually-hidden {
 }
 
 .search-btn-blue {
-  text-transform: uppercase;
-  background-color: #81b3d2;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  border: none;
-  margin: 0 auto;
   width: 100%;
+  background-color: rgb(129, 179, 210);
+  border: medium none;
+  text-transform: uppercase;
   font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  line-height: 16px;
+  padding: 21px 0px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 .search-form input {
@@ -318,13 +318,12 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input {
-  border: medium none;
+  border: none;
   background-color: rgb(242, 242, 242);
+  height: 35px;
+  width: 331px;
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
 }
 
 .date-of-entry,
@@ -378,11 +377,6 @@ input[type="radio"].visually-hidden {
   border: none;
   background-color: #f2f2f2;
   text-align: center;
-}
-
-.search-form input {
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .amount button[name="plus-adult"] {
@@ -746,10 +740,6 @@ input[type="radio"].visually-hidden {
   background: url('../img/icon-2.svg') no-repeat;
 }
 
-.map {
-  display: flex;
-}
-
 .search-btn {
   display: flex;
   margin: 0 auto;
@@ -778,9 +768,11 @@ input[type="radio"].visually-hidden {
 
 .map {
   display: flex;
+  position: relative;
   background-image: url(../img/map.png);
   width: 1200px;
   border: 0;
+  height: 472px;
 }
 
 .map iframe {
