@@ -317,14 +317,13 @@ input[type="radio"].visually-hidden {
   content: "\e800";
 }
 
-.search-form input {
-  border: none;
-  background-color: rgb(242, 242, 242);
-  height: 35px;
-  width: 331px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+
+  ::-webkit-input-placeholder {color:#000000; opacity:1;}/* webkit */
+  ::-moz-placeholder          {color:#000000; opacity:1;}/* Firefox 19+ */
+  :-moz-placeholder           {color:#000000; opacity:1;}/* Firefox 18- */
+  :-ms-input-placeholder      {color:#000000; opacity:1;}/* IE */
+
+
 
 .date-of-entry,
 .date-of-departure {
