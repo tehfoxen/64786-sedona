@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -1276,6 +1277,7 @@ span.icon-calendar:active {
   align-items: center;
   opacity: 0.9;
   background: #ffffff;
+  
 }
 .footer-index {
   margin-top: -122px;
