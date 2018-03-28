@@ -127,6 +127,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   min-height: 508px;
+  background: #ffffff;
   background: url(../img/shape.png) no-repeat 52% bottom, #81b3d2 url(../img/background-photo.jpg) no-repeat bottom;
 }
 
@@ -167,12 +168,14 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   padding-top: 48px;
   padding-bottom: 20px;
+  white-space: pre-line;
 }
 
 .description-item p {
   margin: 0;
   padding-top: 18px;
   line-height: 21px;
+  white-space: pre-line;
 }
 
 .advantages-item {
@@ -193,6 +196,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.first {
+  background:#ffffff;
   background-image: url(../img/description-photo-first.jpg);
   width: 800px;
   height: 256px;
@@ -200,14 +204,12 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.second {
+  background:#ffffff;
   background-image: url(../img/description-photo-second.jpg);
   width: 800px;
   background-size: cover;
 }
 
-.description-photo.second {
-  background-image: url('../img/description-photo-second.jpg')
-}
 
 .interest {
   text-align: center;
@@ -219,7 +221,7 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .search-btn {
@@ -244,10 +246,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.form-show {
-  text-align: center;
-}
-
 .search-btn-blue:hover {
   background-color: #669ec0;
 }
@@ -269,13 +267,21 @@ input[type="radio"].visually-hidden {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
+  font-weight: bold;
 }
 
 .search-form input {
   font: inherit;
+  height: 31px;
+  width: 331px;
   background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.search-form input:focus {
+  outline: 2px solid #f2f2f2
 }
 
 .search-form input:hover {
@@ -370,6 +376,10 @@ input[type="radio"].visually-hidden {
   content: "\e801";
 }
 
+.search-form-invisible {
+  display: none
+}
+
 .search-form .line-adults {
   display: flex;
   justify-content: space-between;
@@ -391,22 +401,8 @@ input[type="radio"].visually-hidden {
   color: #a9a9a9;
 }
 
-.amount input {
-  width: 37px;
-  border: none;
-  background-color: #f2f2f2;
-  text-align: center;
-}
-
 .amount button[name="plus-adult"] {
   margin-right: 52px;
-}
-
-.search-form input {
-  border: none;
-  background-color: rgb(242, 242, 242);
-  height: 35px;
-  width: 331px;
 }
 
 .search-form .amount {
@@ -431,13 +427,16 @@ input[type="radio"].visually-hidden {
   border: none;
   background-color: #f2f2f2;
   text-align: center;
+  border: 2px solid #f2f2f2;
 }
 
-/*второстепенная страница*/
-
 .filter-block {
+  background: #ffffff;
   background: url('../img/filter-background.jpg') no-repeat;
   color: #ffffff;
+}
+.result-block {
+  background: #ffffff;
 }
 
 .filter-block h2 {
@@ -783,6 +782,7 @@ input[type="radio"].visually-hidden {
 .interest p {
   margin-bottom: 46px;
   line-height: 24px;
+  white-space: pre-line;
 }
 
 .map {
@@ -791,7 +791,6 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/map.png);
   width: 1200px;
   border: 0;
-  height: 472px;
 }
 
 .map iframe {
@@ -854,7 +853,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input[name="date-of-entry"],
 .search-form input[name="date-of-departure"] {
-  padding-left: 15px;
+  padding-left: 11px;
 }
 
 span.icon-calendar:active {
@@ -1267,11 +1266,19 @@ span.icon-calendar:active {
 }
 
 .footer {
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 1200px;
-  padding: 23px 0;
+  padding: 21px 0;
+  padding-bottom: 24px;
   padding-left: 2px;
   align-items: center;
+  opacity: 0.9;
+  background: #ffffff;
+}
+.footer-index {
+  margin-top: -122px;
 }
 
 .footer a {
