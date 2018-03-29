@@ -293,7 +293,7 @@ input[type="radio"].visually-hidden {
   width: 22px;
   height: 22px;
   background-position: -5px -152px;
-  background: url(../img/spritesheet.png);
+  background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -828,7 +828,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map iframe {
-  background: #ffffff url(../img/map.png);
+  background: ffffff url(../img/map.png);
   background-repeat: no-repeat;
   width: 1200px;
   height: 595px;
