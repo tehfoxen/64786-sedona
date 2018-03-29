@@ -1,10 +1,3 @@
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'symbols-sedona';
-  src: url('../fonts/symbols-sedona.woff') format('woff'), url('../fonts/symbols-sedona.woff2') format('woff2');
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -293,20 +286,63 @@ input[type="radio"].visually-hidden {
   border: 2px solid #e5e5e5;
 }
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
+.calendar {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-position: -5px -152px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  top: 50%;
+  right: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.icon-minus,
+.icon-plus {
+  margin: 0 auto;
+  width: 11px;
+  height: 11px;
+  display: block;
+  background-image: url(../img/spritesheet.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.icon-minus {
+  background-position: -5px -337px;
+}
+
+.icon-minus:hover {
+  background-position: -5px -363px
+}
+
+.icon-minus:active {
+  background-position: -5px -350px;
+}
+
+.icon-plus:hover {
+  background-position: -5px -422px;
+}
+
+.icon-plus {
+  background-position: -5px -380px;
+}
+
+.icon-plus:active {
+  background-position: -5px -401px
+}
+
+.calendar:hover {
+  background-position: -5px -216px
+}
+
+.calendar:active {
+  background-position: -5px -184px
 }
 
 .icon-minus.btn:hover,
@@ -317,10 +353,6 @@ input[type="radio"].visually-hidden {
 .icon-minus.btn:active,
 .icon-plus.btn:active {
   background-color: #81b3d2;
-}
-
-.icon-calendar::before {
-  content: "\e800";
 }
 
 ::-webkit-input-placeholder {
@@ -368,18 +400,6 @@ input[type="radio"].visually-hidden {
   right: 60px;
 }
 
-.icon-minus::before {
-  content: "\e802";
-}
-
-.icon-plus::before {
-  content: "\e801";
-}
-
-.search-form-invisible {
-  display: none
-}
-
 .search-form .line-adults {
   display: flex;
   justify-content: space-between;
@@ -409,9 +429,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  height: 30px;
   width: 458px;
   box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.filter-block input[type=checkbox] {
+  display: none;
 }
 
 .amount button:hover {
@@ -467,18 +492,27 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-block-form input[type="checkbox"]:checked+label::before {
-  content: "\2611";
+  content: "";
+  background-position: -5px -248px;
 }
 
 .filter-block-form input[type="checkbox"]+label::before {
-  content: "\2610";
+  content: "";
+  background: url(../img/checkbox-off.svg) no-repeat;
   position: absolute;
-  top: 0;
   left: 0;
-  width: 10px;
-  height: 10px;
-  font-family: "symbols-sedona";
-  font-size: 28px;
+  width: 50px;
+  height: 26px;
+}
+
+.filter-block-form input[type="checkbox"]:checked+label::before {
+  background: url(../img/checkbox-on.svg) no-repeat;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  padding: 25px;
 }
 
 .filter-block-form input[type="checkbox"]+label {
@@ -501,7 +535,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: bold;
   margin-top: 0px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 [type="checkbox"],
@@ -783,7 +817,6 @@ input[type="radio"].visually-hidden {
 .interest p {
   margin-bottom: 46px;
   line-height: 24px;
-  white-space: pre-line;
 }
 
 .map {
@@ -804,7 +837,7 @@ input[type="radio"].visually-hidden {
 }
 
 .date-of-departure {
-  top: 127px;
+  top: 130px;
   right: 60px;
 }
 
@@ -813,6 +846,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
+  display: flex;
   box-sizing: border-box;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
@@ -1121,8 +1155,7 @@ img.hotel-image {
 }
 
 .rating-amount {
-  padding-top: 5px;
-  padding-bottom: 3px;
+  padding: 3px;
   margin-bottom: 9px;
   color: #666666;
   background-color: #f2f2f2;
@@ -1158,7 +1191,6 @@ img.hotel-image {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding-right: 8px;
 }
 
 .sorting-ab-list li {
@@ -1178,30 +1210,6 @@ img.hotel-image {
 .icon-down-dir::before {
   margin: 0;
   text-decoration: none;
-}
-
-.icon-up-dir::before {
-  content: "\25b2";
-}
-
-.icon-down-dir::before {
-  content: "\25bc";
-}
-
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
 }
 
 .sorting-ab .active {
@@ -1227,8 +1235,20 @@ img.hotel-image {
   color: #000000;
 }
 
-span.icon-star {
-  margin-left: -5px;
+span.icon-down-dir.active {
+  fill: #81b3d2;
+}
+
+span.icon-up-dir {
+  fill: #cacaca;
+}
+
+span.icon-up-dir:hover {
+  fill: #000000;
+}
+
+span.icon-up-dir:active {
+  fill: #81b3d2;
 }
 
 span.icon-calendar:active {
@@ -1256,10 +1276,6 @@ span.icon-calendar:active {
   color: #81b3d2;
   font-size: 19px;
   line-height: 21px;
-}
-
-.icon-star::before {
-  content: "\2605";
 }
 
 .rating-stars .icon-star::before {
