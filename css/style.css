@@ -127,8 +127,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 508px;
-  background: url(../img/shape.png) no-repeat 52% bottom, #ffffff url(../img/background-photo.jpg) no-repeat bottom;
+  min-height: 507px;
+  background: url(../img/shape.png) no-repeat 52% bottom, #ffffff url(../img/background-photo.jpg) no-repeat center;
+  background-size: auto, 1200px 518px;
 }
 
 .main-banner {
@@ -196,7 +197,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.first {
-  background:#ffffff;
+  background: #ffffff;
   background-image: url(../img/description-photo-first.jpg);
   width: 800px;
   height: 256px;
@@ -204,12 +205,11 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.second {
-  background:#ffffff;
+  background: #ffffff;
   background-image: url(../img/description-photo-second.jpg);
   width: 800px;
   background-size: cover;
 }
-
 
 .interest {
   text-align: center;
@@ -435,6 +435,7 @@ input[type="radio"].visually-hidden {
   background: url('../img/filter-background.jpg') no-repeat;
   color: #ffffff;
 }
+
 .result-block {
   background: #ffffff;
 }
@@ -1276,8 +1277,8 @@ span.icon-calendar:active {
   align-items: center;
   opacity: 0.9;
   background: #ffffff;
-  
 }
+
 .footer-index {
   margin-top: -122px;
 }
