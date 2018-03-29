@@ -162,7 +162,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   padding-top: 48px;
   padding-bottom: 20px;
-  white-space: pre-line;
 }
 
 .description-item p {
