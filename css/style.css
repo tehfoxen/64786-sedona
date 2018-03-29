@@ -121,9 +121,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   min-height: 507px;
-  background: url(../img/shape.png) no-repeat 52% bottom, url(../img/background-photo.jpg) no-repeat center;
+  background: url(../img/shape.png) no-repeat 52% bottom, #ffffff url(../img/background-photo.jpg) no-repeat center;
   background-size: auto, 1200px 518px;
-  background-color: #ffffff;
 }
 
 .main-banner {
@@ -155,6 +154,7 @@ input[type="radio"].visually-hidden {
   color: white;
   text-align: center;
 }
+
 .description-item:nth-child(2) {
   width: 400px;
   padding: 49px 49px 57px;
@@ -193,16 +193,14 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.first {
-  background-color: #ffffff;
-  background-image: url(../img/description-photo-first.jpg);
+  background-image: #ffffff url(../img/description-photo-first.jpg);
   width: 800px;
   height: 256px;
   background-size: cover;
 }
 
 .description-photo.second {
-  background-color: #ffffff;
-  background-image: url(../img/description-photo-second.jpg);
+  background-image: #ffffff url(../img/description-photo-second.jpg);
   width: 800px;
   background-size: cover;
 }
@@ -459,8 +457,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-block {
-  background-color: #ffffff;
-  background: url('../img/filter-background.jpg') no-repeat;
+  background: #ffffff url('../img/filter-background.jpg') no-repeat;
   color: #ffffff;
 }
 
@@ -1129,7 +1126,6 @@ ul.sorting-range-list li {
 img.hotel-image {
   width: 135px;
   height: 90px;
-  background-color: #ffffff;
 }
 
 .hotel-header {
