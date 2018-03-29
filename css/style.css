@@ -121,8 +121,9 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   min-height: 507px;
-  background: url(../img/shape.png) no-repeat 52% bottom, #ffffff url(../img/background-photo.jpg) no-repeat center;
+  background: url(../img/shape.png) no-repeat 52% bottom, url(../img/background-photo.jpg) no-repeat center;
   background-size: auto, 1200px 518px;
+  background-color: #ffffff;
 }
 
 .main-banner {
@@ -154,21 +155,23 @@ input[type="radio"].visually-hidden {
   color: white;
   text-align: center;
 }
+.description-item:nth-child(2) {
+  width: 400px;
+  padding: 49px 49px 57px;
+}
 
 .description-item h2 {
   margin: 0;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-  padding-top: 48px;
   padding-bottom: 20px;
 }
 
 .description-item p {
   margin: 0;
-  padding-top: 18px;
+  padding-top: 20px;
   line-height: 21px;
-  white-space: pre-line;
 }
 
 .advantages-item {
@@ -181,6 +184,7 @@ input[type="radio"].visually-hidden {
 
 .advantages-item h2 {
   margin-bottom: 21px;
+  padding: 0 61px;
 }
 
 .advantages-item p {
@@ -189,7 +193,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.first {
-  background: #ffffff;
+  background-color: #ffffff;
   background-image: url(../img/description-photo-first.jpg);
   width: 800px;
   height: 256px;
@@ -197,7 +201,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description-photo.second {
-  background: #ffffff;
+  background-color: #ffffff;
   background-image: url(../img/description-photo-second.jpg);
   width: 800px;
   background-size: cover;
@@ -455,7 +459,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-block {
-  background: #ffffff;
+  background-color: #ffffff;
   background: url('../img/filter-background.jpg') no-repeat;
   color: #ffffff;
 }
@@ -696,7 +700,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 }
 
 .description {
@@ -706,8 +710,8 @@ input[type="radio"].visually-hidden {
 
 .description-item {
   width: 400px;
-  min-height: 256px;
-  text-align: center;
+  padding: 49px 54px 37px;
+  box-sizing: border-box;
 }
 
 .advantages {
@@ -1125,6 +1129,7 @@ ul.sorting-range-list li {
 img.hotel-image {
   width: 135px;
   height: 90px;
+  background-color: #ffffff;
 }
 
 .hotel-header {
@@ -1282,6 +1287,7 @@ span.icon-calendar:active {
 }
 
 .footer {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   display: flex;
