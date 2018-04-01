@@ -100,6 +100,7 @@
         <a class="search-btn">Поиск гостиницы в седоне</a>
       </section>
       <section class="map">
+      <div class="popup-form">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
 
           <label class="entry" for="date-of-entry">Дата заезда:  </label>
@@ -135,28 +136,29 @@
           <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
 
           <div class="amount">
-            <label for="amounts-of-adults">Взрослые:</label>
-            <button name="minus-adult" type="button">
+            <label for="numAdult">Взрослые:</label>
+            <button name="minus-adult" id="minusAdult" type="button">
               <span class="icon-minus"></span>
             </button>
-            <input id="amounts-of-adults" type="text" placeholder="2">
+            <input id="numAdult" type="text" placeholder="2">
 
-            <button name="plus-adult" type="button">
+            <button name="plus-adult" id="plusAdult" type="button">
               <span class="icon-plus"></span>
             </button>
 
-            <label for="amounts-of-children">Дети</label>
-            <button name="minus-children" type="button" aria-label="минус">
+            <label for="numChild">Дети</label>
+            <button name="minus-children" id="minusChild" type="button" aria-label="минус">
               <span class="icon-minus"></span>
             </button>
 
-            <input id="amounts-of-children" type="text" placeholder="0">
-            <button name="plus-children" type="button" aria-label="плюс">
+            <input id="numChild" type="text" placeholder="0">
+            <button name="plus-children" id="plusChild" type="button" aria-label="плюс">
               <span class="icon-plus"></span>
             </button>
           </div>
           <button class="search-btn-blue" type="submit" aria-label="Найти">Найти</button>
         </form>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564474.505247366!2d-112.00279115033129!3d34.87271362170046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462035967330"
           allowfullscreen=""></iframe>
       </section>

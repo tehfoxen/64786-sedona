@@ -313,6 +313,7 @@ button::-moz-focus-inner,
   margin-right: 5px;
   cursor: pointer;
   fill: #cacaca;
+  outline-width:0;
 }
 
 .calendar.of-entry {
@@ -334,6 +335,7 @@ button::-moz-focus-inner,
 .calendar.of-departure:active {
   fill: #81b3d2;
   outline-style: none;
+  border:none;
 }
 
 .icon-minus,
@@ -551,7 +553,8 @@ button::-moz-focus-inner,
   cursor: pointer;
 }
 
-.filter-block-form input[type="checkbox"]:checked:disabled+label::before
+.filter-block-form input[type="checkbox"]:checked:disabled+label::before,
+.filter-block-form input[type="checkbox"]:disabled+label::before
 {
   opacity: .3;
 }
@@ -1281,23 +1284,23 @@ img.hotel-image {
   color: #000000;
 }
 
-span.icon-down-dir.active {
+.icon-down-dir.active {
   fill: #81b3d2;
 }
 
-span.icon-up-dir {
+.icon-up-dir {
   fill: #cacaca;
 }
 
-span.icon-up-dir:hover {
+.icon-up-dir:hover {
   fill: #000000;
 }
 
-span.icon-up-dir:active {
+.icon-up-dir:active {
   fill: #81b3d2;
 }
 
-span.icon-calendar:active {
+.icon-calendar:active {
   color: #81b3d2;
 }
 
@@ -1336,18 +1339,21 @@ span.icon-calendar:active {
 }
 .search-form-visible{
 display: flex;
-animation-name: animation;
-animation-duration: 0.6s;
+    animation: popuping .7s ease-in-out forwards;
+    animation-name: popuping;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: initial;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+
 
 }
 .search-form-invisible {
 display: none;
-}
-@keyframes animation{
-  0% {transform: translateY(-2000px);}
-  70% {transform: translateY(30px);}
-  90% {transform:translateY(-10px);}
-  100%{transform: translateY(0);}
+
 }
 
 
