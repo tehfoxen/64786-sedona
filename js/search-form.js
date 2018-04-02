@@ -1,22 +1,16 @@
 var link = document.querySelector('.search-btn');
-var popup= document.querySelector('.popup-form ');
+var popup= document.querySelector('.search-form ');
 
-link.classList.toggle('search-form-visible');
+link.classList.toggle('search-button-invisible');
 popup.classList.remove('search-form-visible');
-popup.classList.add('search-form-visible');
 popup.classList.add('search-form-invisible');
 
 link.addEventListener('click', function(event) {
-    link.classList.toggle('search-form-visible');
-    popup.classList.remove('.popup-form');
+    link.classList.toggle('search-button-invisible');
     popup.classList.toggle('search-form-visible');
     popup.classList.toggle('search-form-invisible');
 });
-link.addEventListener("click", function(evt) {
-evt.preventDefault();
-popup.classList.toggle("search-form-visible");
-arrival.focus()
-});
+
 var minusAdult = document.querySelector('#minusAdult');
 var plusAdult = document.querySelector('#plusAdult');
 var minusChild = document.querySelector('#minusChild');
