@@ -1,8 +1,8 @@
 var link = document.querySelector('.search-btn');
 var popup= document.querySelector('.popup-form ');
 
-link.classList.toggle('.search-btn');
-popup.classList.remove('.popup-form');
+link.classList.toggle('search-form-visible');
+popup.classList.remove('search-form-visible');
 popup.classList.add('search-form-visible');
 popup.classList.add('search-form-invisible');
 

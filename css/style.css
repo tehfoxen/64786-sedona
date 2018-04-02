@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -313,7 +318,7 @@ button::-moz-focus-inner,
   margin-right: 5px;
   cursor: pointer;
   fill: #cacaca;
-  outline-width:0;
+  outline-width: 0;
 }
 
 .calendar.of-entry {
@@ -335,7 +340,7 @@ button::-moz-focus-inner,
 .calendar.of-departure:active {
   fill: #81b3d2;
   outline-style: none;
-  border:none;
+  border: none;
 }
 
 .icon-minus,
@@ -554,8 +559,7 @@ button::-moz-focus-inner,
 }
 
 .filter-block-form input[type="checkbox"]:checked:disabled+label::before,
-.filter-block-form input[type="checkbox"]:disabled+label::before
-{
+.filter-block-form input[type="checkbox"]:disabled+label::before {
   opacity: .3;
 }
 
@@ -854,6 +858,7 @@ button::-moz-focus-inner,
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  z-index:1;
 }
 
 .interest {
@@ -888,10 +893,6 @@ button::-moz-focus-inner,
 .date-of-departure {
   top: 130px;
   right: 60px;
-}
-
-.search-form-visible {
-  display: flex;
 }
 
 .search-form {
@@ -929,10 +930,19 @@ button::-moz-focus-inner,
 
 .search-form-visible {
   display: flex;
+
+  
 }
+.search-form-invisible {
+  display: none;
+
+}
+
+
 
 .search-form form {
   margin: 0 auto;
+  
 }
 
 .search-form input[name="date-of-entry"],
@@ -1337,25 +1347,6 @@ img.hotel-image {
 .rating-stars .icon-star::before {
   margin-right: 0;
 }
-.search-form-visible{
-display: flex;
-    animation: popuping .7s ease-in-out forwards;
-    animation-name: popuping;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-delay: initial;
-    animation-iteration-count: initial;
-    animation-direction: initial;
-    animation-fill-mode: forwards;
-    animation-play-state: initial;
-
-
-}
-.search-form-invisible {
-display: none;
-
-}
-
 
 .footer {
   -webkit-box-sizing: border-box;
