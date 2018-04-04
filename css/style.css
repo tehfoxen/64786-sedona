@@ -710,7 +710,7 @@ button::-moz-focus-inner,
   background: #669ec0;
 }
 
-.social-btn:active path {
+.social-btn:active {
   fill: #88b6d1;
 }
 
@@ -726,12 +726,13 @@ button::-moz-focus-inner,
   margin-right: 10px;
 }
 
-.developer-logo:hover path {
+.developer-logo:hover {
   fill: #88b6d1;
 }
 
-.developer-logo:active path {
+.developer-logo:active{
   fill: #bdbbbc;
+  cursor: pointer;
 }
 
 .top-menu .logo {
