@@ -730,7 +730,7 @@ button::-moz-focus-inner,
   fill: #88b6d1;
 }
 
-.developer-logo:active{
+.developer-logo a:active {
   fill: #bdbbbc;
   cursor: pointer;
 }
