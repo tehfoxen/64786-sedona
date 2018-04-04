@@ -726,11 +726,11 @@ button::-moz-focus-inner,
   margin-left: 6px;
 }
 
-.dlogo:hover .developer-logo{
+a.dlogo:hover{
   background-position: -5px -103px
 }
 
-.dlogo:active .developer-logo {
+a.dlogo:active {
   background-position: -5px -54px
 }
 
