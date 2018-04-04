@@ -726,13 +726,16 @@ button::-moz-focus-inner,
   margin-right: 10px;
 }
 
-.developer-logo:hover {
+.developer-logo:hover svg {
   fill: #88b6d1;
 }
 
-.developer-logo a:active {
+.developer-logo:active svg {
   fill: #bdbbbc;
-  cursor: pointer;
+
+}
+.developer-logo svg{
+  fill:#231f20;
 }
 
 .top-menu .logo {
