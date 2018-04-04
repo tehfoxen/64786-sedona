@@ -715,26 +715,24 @@ button::-moz-focus-inner,
 }
 
 .developer-logo {
-  display: block;
-  width: 112px;
-  height: auto;
-  margin-top: 8px;
-  padding-left: 10px;
+  display: inline-block;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 113px;
+  height: 39px;
+  background-position: -5px -5px;
+  vertical-align: top;
+  margin-left: 6px;
 }
 
-.developer-logo span {
-  margin-right: 10px;
+.dlogo:hover .developer-logo{
+  background-position: -5px -103px
 }
 
-.developer-logo:hover {
-  fill: #88b6d1;
+.dlogo:active .developer-logo {
+  background-position: -5px -54px
 }
-
-.developer-logo:active{
-  fill: #bdbbbc;
-  cursor: pointer;
-}
-
 
 .top-menu .logo {
   position: absolute;
